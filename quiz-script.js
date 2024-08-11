@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", function() {
             answer: [
                 {text: "แค้น สักวันต้องเอาคืน", points: 30},
                 {text: "เศร้า ร้องไห้ ไม่อยากโดนอีก", points: 5},
-                {text: "เอาไปเล่าคนอื่น ว่ามีคนมาบุลลี่คุณ", points: 15},
+                {text: "เอาไปเล่าคนอื่นว่ามีคนมาบูลลี่คุณ", points: 15},
             ]
         },
         {
