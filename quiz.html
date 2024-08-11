@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bullying Quiz</title>
+    <link rel="stylesheet" href="quiz-style.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/chevron-left.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="container">
+        <div class="top">
+            <div class="question-number">
+                <div class="current">1</div>
+                <div>of</div>
+                <div class="total">10</div>
+            </div>
+            <div class="goback">
+                <a href="index.html">ย้อนกลับ</a>
+            </div>
+        </div>
+        <div class="question">
+            <h1 id="questiontext">question</h1>
+        </div>
+        <div class="answer"></div>
+            <div class="radio-list">
+                <div class="radio-item">
+                    <input type="radio" name="radio" id="radio1">
+              
+                    <label for="radio1">answer1</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="radio" id="radio2">
+                    <label for="radio2">answer2</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" name="radio" id="radio3">
+                    <label for="radio3">answer3</label>
+                </div>
+            </div>
+        <div class="button">
+            <button class="previousbutton">ก่อนหน้า</button>
+            <button class="nextbutton">ถัดไป</button>
+        </div>
+    </div>
+    <script src="quiz-script.js"></script>
+</body>
+</html>

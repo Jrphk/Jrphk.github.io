@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Noto Sans Thai", sans-serif;
+  user-select: none; 
+}
+
+
+body {
+  background-attachment: fixed;
+  background-image: linear-gradient(to right bottom, #ffecd2, #fdd8b3, #fdc297, #feab7f, #ff926e);}
+
+.logo {
+  order: 1;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #30354E;
+}
+.text{
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+
+}
+.cbj{
+  display: inline-block;
+  transition: transform 0.7s ease;
+
+}
+.jinaphan{
+  opacity: 1;
+  position: absolute;
+  padding-left: .2em;
+  transition: opacity 0.3s ease-in-out;
+
+}
+.text:hover .cbj{
+  transform: translateX(-49%); 
+
+}
+.text:hover .jinaphan{
+  display: inline;
+  opacity: 1;
+}
+.text:hover{
+  padding-right: .5em;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+nav ul {
+  display: flex;
+  order: 2;
+}
+
+nav ul a {
+  color: #30354E;
+  font-size: 1rem;
+  margin-left: 2rem;
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: #30354E;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+nav ul a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+nav ul a:hover {
+  color: #8b4513;
+  transform: scale(1.1);
+}
+
+
+.container {
+  height: 600px;
+  padding: 20px;
+  margin-top: 100px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+
+.container img {
+  width: 100%;
+  height: 650px;
+}
+
+.hero-text {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.hero-text h1 {
+  font-size: 3.3rem;
+  margin-bottom: 12px;
+  color: #30354E;
+}
+
+.hero-text p {
+  font-size: 1.4rem;
+  color: #30354E;
+}
+
+button {
+  padding: 1em 2.1em 1.1em;
+  border-radius: 24px;
+  margin: 8px;
+  margin-top: 36px;
+  border: none;
+  background: linear-gradient(90deg, #f63c3f 0%, hsla(359, 100%, 72%, 1) 100%);
+  background-size: 200% auto;
+  font-weight: 800;
+  font-size: 0.85em;
+  text-align: center;
+  color: #FCE5C6;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.03);
+}
+@media (min-width: 1920px){
+  .container {
+    height: 600px;
+    margin-top: 100px;
+  }
+  .container img {
+    width: 100%;
+    height: 40.625rem ;
+  }
+  .hero-text h1 {
+    font-size: 3.3rem;
+  }
+  .hero-text p {
+    font-size: 1.4rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  nav ul a{
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1366px) and (max-width: 1920px ){
+  .container {
+    height: 500px;
+    margin-top: 50px;
+  }
+  .container img {
+    width: 50%;
+    height: 29.625rem ;
+  }
+  .hero-text h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text p {
+    font-size: 1.2rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  nav ul a{
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 1000px) and (max-width: 1366px ){
+.container {
+  height: 500px;
+  margin-top: 20px;
+}
+.container img {
+  width: 50%;
+  height: 26.625rem ;
+}
+.hero-text h1 {
+  font-size: 2.5rem;
+}
+.hero-text p {
+  font-size: 1.1rem;
+}
+}
+@media (max-width: 1000px) {
+  .container {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+  .hero-text {
+    width: 100%;
+    text-align: center;
+  }
+  
+
+
+}
+
+@media (max-width: 678px) {
+  .hero-text h1 {
+    font-size: 1.6rem;
+    margin-top: -20rem
+  }
+  .logo {
+    font-size: 1rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  .container img{
+    height: 15rem;
+  }
+}
+@media (max-width: 428px) {
+  nav ul {
+    display: none;
+  }
+  .container img {
+    height: 12rem;
+  }
+  .hero-text p {
+    font-size: 1rem;
+  }
+  button {
+    padding: .5em 1em .5em;
+    font-size: 1rem;
+  }
+  .hero-text h1 {
+    font-size: 1.35rem;
+    margin-top: -25rem;
+  }
+}
